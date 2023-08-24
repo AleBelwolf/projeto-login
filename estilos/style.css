@@ -49,8 +49,9 @@ section#login>div#imagem {
     background-size: cover;
 }
 
-section#login>div#formulario {
-    display: block;
+#screenFormulario {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
 }
 
@@ -63,8 +64,9 @@ div#formulario>p {
     font-size: 0.9em;
 }
 
-form>div.campo {
-    display: block;
+.campo {
+    display: flex;
+    justify-content: space-evenly;
     background-color: #5f2c82;
     border: 3px solid #5f2c82;
     width: 100%;
@@ -92,11 +94,6 @@ div.campo>input {
     height: 100%;
     border-radius: 8px;
     padding: 4px;
-
-    position: relative;
-    top: 0%;
-    left: 0%;
-    transform: translate(23%, -123%)
 }
 
 div.campo>input:focus-within {
